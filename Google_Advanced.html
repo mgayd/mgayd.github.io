@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title> Розширений пошук Google </title>
+        <style>
+            img {
+                position: initial;
+                padding-top: 10px;
+                padding-left: 10px;
+                height: 36px;
+                width: 111px;
+                vertical-align: middle;
+            }
+            form {
+                text-align: left;
+                margin: 20px;
+            }
+            input {
+                border: 1px #d9d9d9 solid;
+                border-radius: 1px;
+                padding-top: 6px;
+                margin: 0 auto;
+                z-index: 3;
+                flex: 100%;
+                height: 25px;
+                width: 250%;
+                max-width: 584px;
+                text-align: left;
+                padding-left: 15px;
+                font-size: 13px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+            }
+            input:hover {
+                border: 1px hsl(0, 1%, 71%);
+                border-style: solid;
+                cursor: text;
+            }
+            input:focus {
+                outline: 1px hsl(0, 1%, 71%);
+                color: black;
+            }
+            a {
+                position: relative;
+                top: 5px;
+                left:850px;
+                padding-right: 30px;
+                line-height: 24px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+            }
+            a:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            a:first-child {
+                margin-left: 75%;
+            }
+            .words {
+                padding-left: 30px;
+                padding-right: 20px;
+                font-size: 15px;
+                font-style: inherit;
+                vertical-align: baseline;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #search {font-size: 16px;}
+            #title {
+                font-size: 20px;
+                color: red;
+            }
+            #submit {
+                margin-left: 471px;
+                margin-right: 0px;
+                height: 30px;
+                font-size: 11px;
+                color: white;
+                background-color: #4d90fe;
+                border: 1px solid #3079ed;
+            }
+            #submit:hover{
+                cursor: pointer;
+                border: 2px solid slateblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png">
+            <a href="Google_Images.html">Зображення</a>
+            <a href="Google_Startpage.html">Пошук</a> 
+        </div>
+        <p class="words" id="title">Розширений пошук</p>
+        <br>
+        <p class="words" id="search">Знайти сторінки із...</p>
+        <form action="https://google.com/search">
+            <table>
+                <tr>
+                    <td class="words">усіма цими словами:</td>
+                    <td><input type="text" name="as_q"></td>
+                </tr>
+                <tr>
+                    <td class="words">саме цим словом або фразою:</td>
+                    <td><input type="text" name="as_epq"></td>
+                </tr>
+                <tr>
+                    <td class="words">будь-яким із цих слів:</td>
+                    <td><input type="text" name="as_oq"></td>
+                </tr>
+                <tr>
+                    <td class="words">жодним з цих слів</td>
+                    <td><input type="text" name="as_eq"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" id="submit">Розширений пошук</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

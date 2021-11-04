@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title> Google </title>
+        <style>
+            button{
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                background-color: #f8f9fa;
+                font-size: 14px;
+                border: none;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                padding: 0 16px;
+                line-height: 27px;
+                margin: 11px 4px;
+                border-radius: 4px;
+            }
+            button:hover {
+                border: 1px hsl(0, 1%, 71%);
+                border-style: solid;
+                cursor: pointer;
+            }
+            img {
+                display: block;
+                position: relative;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                max-height: 100%;
+                max-width: 100%;
+                width: auto;
+                text-align: center;
+            }
+            form {
+                text-align: center;
+                margin: 20px;
+            }
+            input {
+                border: 1px #dfe1e5 solid;
+                border-radius: 24px;
+                padding-top: 6px;
+                margin: 0 auto;
+                z-index: 3;
+                flex: 100%;
+                height: 44px;
+                width: 40%;
+                max-width: 584px;
+                text-align: left;
+                padding-left: 15px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+            }
+            input:hover {
+                border: 1px hsl(0, 1%, 71%);
+                border-style: solid;
+                cursor: text;
+            }
+            input:focus {
+                outline: 1px hsl(0, 1%, 71%);
+                color: black;
+            }
+            a {
+                position: relative;
+                top: 15px;
+                padding-top: 20px;
+                padding-left: 30px;
+                line-height: 24px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+            }
+            a:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            a:first-child {
+                margin-left: 75%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="Google_Images.html">Зображення</a>
+        <a href="Google_Advanced.html">Розширений пошук</a> 
+        <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png">
+        <form action="https://google.com/search">
+            <center>
+                <input type="text" name="q">
+            </center>
+            <button type="submit">Google Search</button>
+            <button type="submit" name="btnI">Мені пощастить</button>
+        </form>
+    </body>
+</html>
